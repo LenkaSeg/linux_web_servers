@@ -1,0 +1,36 @@
+Vagrant-Ubuntu-Trusty
+
+inside the VM:
+run: pwd (for current directory)
+ls -al (to see all the hidden files and directories with additional 
+info)
+
+What some of the directories mean:
+
+etc = configuration files live here
+var = (variable files) = files expected to grow or change in size = 
+system and application logs
+bin = executable binaries accessible by all users
+sbin = to be used only by root for system administration and maintenance 
+purposes
+lib = for libraries that support binaries
+usr = for user programs (similar to bin, but in bin are required for 
+boot-up and system maintenance processes)
+
+SYSTEM MAINTENANCE
+
+to be aware of all the new updates (but does not install them):
+sudo apt-get update
+
+to actually do the upgrade:
+sudo apt-get upgrade
+
+to see the apt-get manual:
+man apt-get
+
+autoremove = checks if some packages are no longer used and removes them
+to install that:
+
+sudo apt-get autoremove
+
+to search the names of packages: packages.ubuntu.com
